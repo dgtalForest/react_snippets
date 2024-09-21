@@ -242,6 +242,8 @@ export default function List() {
 
 ```
 # Keeping Components Pure
+- Minds its own business. It does not change any objects or variables that existed before it was called.
+- Same inputs, same output. Given the same inputs, a pure function should always return the same result.
 
 ```js
 function Recipe({ drinkers }) {
@@ -265,4 +267,15 @@ export default function App() {
     </section>
   );
 }
+```
+
+# Your UI as a tree
+React uses trees to model the relationships between components and modules.
+### parent and child relationship 
+![UI tree](images/component-tree.png)
+
+### module dependency tree
+![UI tree](images/module-tree.png)
+```
+
 ```
